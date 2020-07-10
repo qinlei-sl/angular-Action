@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="header">
+    <div>
+        <button nz-button nzType="primary" nzBlock (click)="add()"><i nz-icon nzType="plus" nzTheme="outline"></i></button>
+    </div>
+
+  </div>
+  <div class="main">
+    <button nz-button nzType="primary" (click)="showModal(index)" nzBlock nz-row
+      *ngFor="let item of entry;let index = index"><span nz-col nzSpan="12">条目{{index+1}}</span>
+      <p nz-col nzSpan="12"><span>{{state?'结果':stateTime?'已过期':'未开始'}}</span>{{Compare}}</p>
+    </button>
+    <nz-modal [(nzVisible)]="isVisible" nzTitle="The first Modal" (nzOnCancel)="handleCancel()" (nzOnOk)="handleOk()">
+      <app-vote-content *ngIf="isVisible"></app-vote-content>
+    </nz-modal>
+  </div>
+</div>

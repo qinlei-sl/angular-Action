@@ -1,0 +1,14 @@
+<div class="container" >
+  <div class="header">
+      <h3>条目{{entryNum+1}}</h3>
+      <p>{{selectData}}</p>
+  </div>
+  <div class="each">
+      <app-content-each *ngFor="let item of allPeople; let index = index" [user]="[item,index,entryNum]"
+        (child)="select($event)">
+      </app-content-each>
+  </div>
+  <div class="status">
+    <app-content-status [UserData]="timer"></app-content-status>
+  </div>
+</div>

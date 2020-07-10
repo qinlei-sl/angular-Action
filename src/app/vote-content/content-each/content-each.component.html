@@ -1,0 +1,9 @@
+<div nz-row class="each">
+  <h3 nz-col nzSpan="12">{{userData[0].name}}</h3>
+  <div nz-col nzSpan="6">
+  <button nz-button nzType="primary" nzBlock (click)='tick()' [disabled]="disabled">同意</button>
+  </div>
+  <div nz-col nzSpan="6">
+    <button nz-button nzType="primary" nzBlock [disabled]="nodisabled" (click)='notick()'>不同意</button>
+  </div>
+</div>

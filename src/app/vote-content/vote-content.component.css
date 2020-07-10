@@ -1,0 +1,13 @@
+.each,
+.status {
+  width: 100%;
+  height: 20vh;
+  margin: 50px 0;
+  overflow-y: scroll;
+}
+.status{
+  border: 1px solid #1890FF;
+}
+p{
+  font-size: 16px;
+}

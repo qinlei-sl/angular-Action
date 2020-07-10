@@ -1,0 +1,26 @@
+div{
+  box-sizing: border-box;
+}
+.container {
+  width: 100%;
+  max-width: 800px;
+  height: 100vh;
+  border: 1px solid black;
+  margin: 0 auto;
+}
+.header{
+  overflow: hidden;
+  padding: 30px;
+  border-bottom: 1px solid black;
+}
+.header div{
+  width:100px;
+  height: 50px;
+  float: right;
+}
+.main button{
+  margin: 10px 0;
+}
+.main span{
+  text-align: left;
+}

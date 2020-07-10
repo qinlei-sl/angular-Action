@@ -1,0 +1,15 @@
+*{
+  margin: 0 ;
+  padding: 0;
+}
+div{
+  box-sizing: border-box;
+}
+.each {
+  border: 1px solid black;
+  padding: 0 10px;
+  margin:5px 0
+}
+.each div{
+  padding:0 10px;
+}
